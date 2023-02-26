@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Digital para treino</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Piano Digital para treino</h1>
+        <h3>Toque utilizando o click do mouse ou o teclado de seu computado!</h3>
+    </header>
+    <main>
+        <div>
+            <input id="do" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Dó">
+            <input id="re" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Ré">
+            <input id="mi" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Mi">
+            <input id="fa" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Fá">
+            <input id="sol" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Sol">
+            <input id="la" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Lá">
+            <input id="si" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Si">
+            <input id="do2" onkeypress="teclado(event)" onclick="usingMouse(event)" type="button" value="Dó">
+        </div>
+        <div>
+            <h2>
+                Como utilizar as teclas?
+            </h2>
+            <p>
+                <li><strong>Nota Dó:</strong> tecla <strong>'a'</strong> -> Frequência (Hz): 261.63</li>
+                <li><strong>Nota Ré:</strong> tecla <strong>'s'</strong> -> Frequência (Hz): 293.66</li>
+                <li><strong>Nota Mi:</strong> tecla <strong>'d'</strong> -> Frequência (Hz): 329.63</li>
+                <li><strong>Nota Fá:</strong> tecla <strong>'f'</strong> -> Frequência (Hz): 349.23</li>
+                <li><strong>Nota Sol:</strong> tecla <strong>'j'</strong> -> Frequência (Hz): 392.00</li>
+                <li><strong>Nota Lá:</strong> tecla <strong>'k'</strong> -> Frequência (Hz): 440.00</li>
+                <li><strong>Nota Si:</strong> tecla <strong>'l'</strong> -> Frequência (Hz): 493.88</li>
+                <li><strong>Nota Dó:</strong> tecla <strong>'ç'</strong> -> Frequência (Hz): 523,25</li>
+            </p>
+        </div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
