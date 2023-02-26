@@ -60,8 +60,9 @@ teclado = (event) => {
         setTimeout(() => {
             // Encerra o oscilador
             oscillator.stop();
-        }, 300) //tempo de delay 0.5 segundos
+        }, 300) //tempo de delay 0.3 segundos
 
+        // Imitando a ação do :active padrão do input button
         var trocaCor = document.getElementById(id)
         trocaCor.style.backgroundColor = '#eeeeee'
         trocaCor.style.border = 'inset 2px buttonborder';

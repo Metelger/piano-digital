@@ -8,6 +8,15 @@ h1 {
     margin: 20px;
 }
 
+h2 {
+    text-align: left;
+    padding: 15px;
+}
+
+h3 {
+    margin: 20px;
+}
+
 main {
     width: 600px;
     margin: auto;
@@ -26,11 +35,6 @@ input:active {
 
 body {
     background-color: #dddddd;
-}
-
-h2 {
-    text-align: left;
-    padding: 15px;
 }
 
 li {
