@@ -45,6 +45,7 @@ usingKeyboard = (event) => {
     // Cria um oscilador para gerar o som
     const oscillator = context.createOscillator();
     
+    
     const teclasPermitidas = ['a', 's', 'd', 'f', 'j', 'k', 'l', 'ç'];
 
     if (teclasPermitidas.includes(event.key)) {
