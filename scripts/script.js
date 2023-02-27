@@ -111,6 +111,15 @@ usingMouse = (event) => {
             break;
     }
 
+    var trocaCor = document.getElementById(buttonId)
+    trocaCor.style.backgroundColor = '#eeeeee'
+    trocaCor.style.border = 'inset 2px buttonborder';
+
+    setTimeout(() => {
+        trocaCor.style.backgroundColor = '#ffffff';
+        trocaCor.style.border = 'outset 2px buttonborder';
+    }, 200)
+
     const oscillator = context.createOscillator();
     oscillator.frequency.value = frequency;
     oscillator.connect(context.destination);
