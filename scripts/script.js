@@ -1,4 +1,4 @@
-teclado = (event) => {
+usingKeyboard = (event) => {
     // Cria um contexto de áudio
     const context = new AudioContext();
 
@@ -76,8 +76,8 @@ teclado = (event) => {
       console.log('Tecla não possui função');
     }
 }
-// Adiciona um evento para "escutar" a ação de quando uma tecla é pressionada e chama a função teclado
-document.addEventListener("keydown", teclado);
+// Adiciona um evento para "escutar" a ação de quando uma tecla é pressionada e chama a função usingKeyboard
+document.addEventListener("keydown", usingKeyboard);
 
 usingMouse = (event) => {
     const context = new AudioContext();
