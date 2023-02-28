@@ -1,6 +1,8 @@
 usingKeyboard = (event) => {
     // Cria um contexto de áudio
     const context = new AudioContext();
+    // Cria um oscilador para gerar o som
+    const oscillator = context.createOscillator();
 
     // Define a váriavél que receberá a frequência da nota
     var frequency;
@@ -41,10 +43,6 @@ usingKeyboard = (event) => {
             id = 'do2';
             break;
     }
-
-    // Cria um oscilador para gerar o som
-    const oscillator = context.createOscillator();
-    
     
     const teclasPermitidas = ['a', 's', 'd', 'f', 'j', 'k', 'l', 'ç'];
 
@@ -129,3 +127,28 @@ usingMouse = (event) => {
         oscillator.stop();
     }, 300)
 }
+
+changeState = (check) => {
+    check = document.getElementById('changeMode').checked;
+    return check
+}
+
+handleChange = () => {
+    // var teste = document.getElementById('body')
+    // var teste2 = document.querySelectorAll('input')
+    // if(changeState() === true) {
+    //     teste.style.backgroundColor = 'red'
+    //     teste2.forEach(function(v){
+    //         v.classList.toggle('testeInput')
+    //     })
+    // } else {
+    //     teste.style.backgroundColor = 'blue'
+    // }
+    console.log('entrou aqui')
+}
+
+
+
+
+// Emoji nota musical em HTML = &#x1F3B6;
+// Emoji nota musical em JS = '\u{1F3B6}'
