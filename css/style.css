@@ -77,7 +77,7 @@ li {
 }
 
 /* Estilizando o input do tipo radio */
-input[type="checkbox"] {
+input#changeMode {
     /* Ocultar o botão padrão */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -93,7 +93,7 @@ input[type="checkbox"] {
   }
   
   /* Estilizando o input do tipo radio quando selecionado */
-  input[type="checkbox"]:checked {
+  input#changeMode:checked {
     background-image: linear-gradient(to right, #ffffff, #ffffff, #3e8e41);
   }
   
@@ -104,7 +104,7 @@ input[type="checkbox"] {
 
  .labelModoKids {
     padding: 5px;
-    background-color: #808080;
+    background-color: #8080808e;
     border-radius: 20px;
     width: 130px;
  }
