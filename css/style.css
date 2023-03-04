@@ -33,6 +33,7 @@ main {
     border-radius: 0% 0% 5% 5%;
     font-weight: bolder;
     color: #808080;
+    border: solid 1px darkgray;
 }
 
 .inputPiano:active {
@@ -40,7 +41,7 @@ main {
 }
 
 body {
-    background-color: #dddddd;
+    background-color: #808080;
 }
 
 li {
@@ -51,13 +52,15 @@ li {
 .piano {
     width: 700px;
     height: 300px;
-    background-color: black;
+    background: linear-gradient(to bottom right,rgba(0,0,0,0.1),rgba(0,0,0,0.0)),url(../image/85_dark\ fine\ wood\ texture-seamless.jpg);
+    box-shadow: 0px 0px 10px 2px black;
+    border: outset 2px black;
     border-radius: 30% 30% 5% 5%;
 }
 
 .pianoTitle {
     color: #ffffff;
-    padding-top: 25px;
+    padding-top: 35px;
     font-size: large;
     text-shadow: 0px 0px 3px #dddddd;
 
@@ -69,7 +72,7 @@ li {
   }
 
 .changeMode {
-    padding-left: 50px;
+    margin-left: 70px;
     text-align: left;
 }
 
@@ -84,7 +87,6 @@ input[type="checkbox"] {
     height: 20px;
     border: 2px solid #ccc;
     border-radius: 20%;
-    margin-right: 5px;
     background-image: linear-gradient(to right, #808080, #ffffff, #ffffff);
     vertical-align: middle;
     cursor: pointer;
@@ -96,6 +98,13 @@ input[type="checkbox"] {
   }
   
 
-.testeInput {
-    
+.pianoKids {
+    background: linear-gradient(to bottom right,rgba(0,0,0,0.1),rgba(0,0,0,0.0)),url(../image/newPiano.jpg);
+ }
+
+ .labelModoKids {
+    padding: 5px;
+    background-color: #808080;
+    border-radius: 20px;
+    width: 130px;
  }

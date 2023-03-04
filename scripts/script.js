@@ -68,7 +68,8 @@ usingKeyboard = (event) => {
 
         setTimeout(() => {
             trocaCor.style.backgroundColor = '#ffffff';
-            trocaCor.style.border = 'outset 2px buttonborder';
+            trocaCor.style.border = 'solid 1px darkgray';
+            
         }, 200)
 
     } else {
@@ -116,7 +117,7 @@ usingMouse = (event) => {
 
     setTimeout(() => {
         trocaCor.style.backgroundColor = '#ffffff';
-        trocaCor.style.border = 'outset 2px buttonborder';
+        trocaCor.style.border = 'solid 1px darkgray';
     }, 200)
 
     const oscillator = context.createOscillator();
@@ -134,21 +135,35 @@ changeState = (check) => {
 }
 
 handleChange = () => {
-    // var teste = document.getElementById('body')
-    // var teste2 = document.querySelectorAll('input')
-    // if(changeState() === true) {
-    //     teste.style.backgroundColor = 'red'
-    //     teste2.forEach(function(v){
-    //         v.classList.toggle('testeInput')
-    //     })
-    // } else {
-    //     teste.style.backgroundColor = 'blue'
-    // }
-    console.log('entrou aqui')
+    var teste2 = document.getElementById('piano')
+    var teste3 = document.getElementById('body')
+    if(changeState() === true) {
+        teste2.classList.toggle('pianoKids')
+        teste3.style.backgroundColor = '#48829d'
+        teste3.style.transition = '2s'
+    } else {
+        teste2.classList.toggle('pianoKids')
+        teste3.style.backgroundColor = '#dddddd'
+        teste3.style.transition = '2s'
+    }
 }
 
 
 
 
+
+// handleChange = () => {
+//     var teste = document.getElementById('body')
+//     var teste2 = document.querySelectorAll('input')
+//     if(changeState() === true) {
+//         teste.style.backgroundColor = 'red'
+//         teste2.forEach(function(v){
+//             v.classList.toggle('testeInput')
+//         })
+//     } else {
+//         teste.style.backgroundColor = 'blue'
+//     }
+//     console.log('entrou aqui')
+// }
 // Emoji nota musical em HTML = &#x1F3B6;
 // Emoji nota musical em JS = '\u{1F3B6}'
