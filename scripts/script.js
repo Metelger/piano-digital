@@ -140,17 +140,12 @@ handleChange = () => {
     var teste4 = document.getElementById('textLabel')
     if(changeState() === true) {
         teste2.classList.toggle('pianoKids')
-        teste3.style.backgroundColor = '#48829d'
+        teste3.style.backgroundColor = '#48829da9'
         teste3.style.transition = '1s'
-        teste4.style.color = '#000000'
-        teste4.style.textShadow = '0px 0px 3px #111111'
     } else {
         teste2.classList.toggle('pianoKids')
         teste3.style.backgroundColor = '#dddddd'
         teste3.style.transition = '1s'
-        teste4.style.color = '#ffffff'
-        teste4.style.textShadow = '0px 0px 3px #dddddd'
-
     }
 }
 

@@ -55,7 +55,7 @@ li {
     background: linear-gradient(to bottom right,rgba(0,0,0,0.1),rgba(0,0,0,0.0)),url(../image/85_dark\ fine\ wood\ texture-seamless.jpg);
     box-shadow: 0px 0px 10px 2px black;
     border: outset 2px black;
-    border-radius: 30% 30% 5% 5%;
+    border-radius: 20% 20% 5% 5%;
 }
 
 .pianoTitle {
@@ -104,7 +104,7 @@ input#changeMode {
 
  .labelModoKids {
     padding: 5px;
-    background-color: #8080808e;
+    background-color: #808080;
     border-radius: 20px;
     width: 130px;
  }
